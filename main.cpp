@@ -4,9 +4,18 @@
     The owner also want to make the system loop so it can solve problems without reopening the system.
 */ 
 
-#include <iostream>
+/*
+    Accepts 2 value and has a choice from MDAS.
+    The User of the system sometimes make mistake make sure only accept values stated on main menu.
+    The owner also want to make the system loop so it can solve problems without reopening the system.
+*/
 
-int main()
+#include <iostream>
+int MainMenu();
+int InputData;
+int Add()
+int Subtraction()
+int Division()
 {
     int val1, val2, choice;
     char continueChoice = 'y';
@@ -15,42 +24,33 @@ int main()
     {
         do
         {
-            std::cout
-                << "--- Please Select for Math Solution to use ---\n"
-                << "1. Add\n"
-                << "2. Subtract\n"
-                << "3. Multipliction\n"
-                << "4. Division\n"
-                << "\n"
-                << "Enter Choice: ";
-            std::cin >> choice;
-
-            std::system("cls");
-
-            switch (choice)
+           
+            switch (choice);
             {
-            case 1:
+            int addition()
                 std::cout << "Please input value 1:";
                 std::cin >> val1;
                 std::cout << "Please input value 2:";
                 std::cin >> val2;
                 std::cout << val1 << " + " << val2 << " = " << val1 + val2 << "\n";
-                break;
-            case 2:
+
+
+               
+              int subraction()
                 std::cout << "Please input value 1:";
                 std::cin >> val1;
                 std::cout << "Please input value 2:";
                 std::cin >> val2;
                 std::cout << val1 << " - " << val2 << " = " << val1 - val2 << "\n";
                 break;
-            case 3:
+             int multiplication ()
                 std::cout << "Please input value 1:";
                 std::cin >> val1;
                 std::cout << "Please input value 2:";
                 std::cin >> val2;
                 std::cout << val1 << " * " << val2 << " = " << val1 * val2 << "\n";
                 break;
-            case 4:
+            int division()
                 std::cout << "Please input value 1:";
                 std::cin >> val1;
                 std::cout << "Please input value 2:";
@@ -69,4 +69,23 @@ int main()
         std::system("cls");
 
     } while (continueChoice == 'y');
-}
+
+    
+
+    int MainMenu();
+    {
+        int choice;
+        std::cout
+            << "--- Please Select for Math Solution to use ---\n"
+            << "1. Add\n"
+            << "2. Subtract\n"
+            << "3. Multipliction\n"
+            << "4. Division\n"
+            << "\n"
+            << "Enter Choice: ";
+        std::cin >> choice;
+
+        std::system("cls");
+        return choice;
+
+    }
